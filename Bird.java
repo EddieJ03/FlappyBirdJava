@@ -1,9 +1,3 @@
-  /*
-  - initialize bird as image
-  - bird get and set methods
-  - bird size methods
-  - bird speed methods
-  */
 
 import java.io.File;
 import java.net.URL;
@@ -16,12 +10,8 @@ import javax.imageio.ImageIO;
 
 public class Bird extends Rectangle
 {
-  //private int speed;
   private Image image;
-  //private int xPos;
-  //private int yPos;
-  //private int width;
-  //private int height;
+  
   public Bird()
   {
     super(390, 390, 30, 30);
@@ -38,14 +28,14 @@ public class Bird extends Rectangle
     }
     catch(Exception e)
     {
-      System.out.println("bird file");
+      System.out.println("Error getting file.");
     }
      
   }
 
  
 
-  public void jump()
+  public void fall()
   {
     if (!FlappyBird.started)
     {
@@ -117,6 +107,3 @@ public class Bird extends Rectangle
     return x + " ," + y + " ," + width + " ," + height;
   }
 }
-
-
-//public Bird(Rectangle col)

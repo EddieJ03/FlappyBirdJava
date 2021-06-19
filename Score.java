@@ -1,7 +1,6 @@
 public class Score
 {
   private double score;
-  private int highScore;
 
   public Score()
   {
@@ -26,7 +25,6 @@ public class Score
   public void printScore()
   {
     System.out.println("Your score was: " + score);
-    System.out.println("Your high score was: " + highScore);
   }
 
 }
